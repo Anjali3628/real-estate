@@ -12,7 +12,6 @@
 .bg-body                {background: var(--body-color) !important}
 .bg-card                {background: var(--bs-body-bg) !important}
 
-.bg-primary-gradient    {background: var(--primary-gradient) !important; color: $white;}
 .bg-gradient            {background: linear-gradient(145deg, var(--primary-color), var(--theme-color2)) !important;}
 .bg-gradient-dark       {background: radial-gradient(94% 58.3% at 50.3% 82.6%, hsl(252, 28%, 20%) 0%, var(--token, rgb(17, 16, 19))  100%)}
 .bg-gradient-dark2      {background: radial-gradient(94% 92.9% at 100% 96.1%, #413025 0%, var(--token, rgb(17, 16, 19))  100%)}

@@ -1,34 +1,28 @@
 {
-  "name": "Html",
-  "description": "Html",
+  "name": "real-estate",
   "version": "1.0.0",
+  "description": "Real Estate Static Website",
   "private": true,
-  "stackblitz": {
-    "startCommand": "npm start"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "grunt"
   },
   "devDependencies": {
-    "@types/node": "^20.5.0",
     "grunt": "^1.6.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
     "grunt-sass": "^4.0.0",
-    "husky": "^7.0.4",
     "sass": "^1.89.2"
   },
   "dependencies": {
+    "bootstrap": "^5.3.7",
+    "jquery": "^3.6.4",
     "@popperjs/core": "^2.11.7",
-    "@rollup/plugin-inject": "^5.0.3",
     "@srexi/purecounterjs": "^1.5.0",
     "@toast-ui/editor": "^3.2.2",
     "@yaireo/tagify": "^4.17.8",
-    "bootstrap": "^5.3.7",
     "bootstrap-datepicker": "^1.9.0",
     "bootstrap-icons": "^1.11.3",
     "font-awesome": "^4.7.0",
-    "grunt-contrib-sass": "^2.0.0",
-    "grunt-contrib-uglify": "^5.2.2",
-    "jquery": "^3.6.4",
     "tiny-slider": "^2.9.4"
   }
 }
