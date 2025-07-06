@@ -1,0 +1,27 @@
+body {
+    font-family: var(--body-font); 
+}
+
+// for card layout height
+.card-height {
+    >.col,
+    >[class*='col-']{
+        display: flex;
+        align-items: stretch;
+        .card{
+            flex: 1 1 auto;
+        }
+    }
+}
+:is(a){
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+
+

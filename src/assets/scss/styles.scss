@@ -1,0 +1,14 @@
+// framework css ( Bootstrap )
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// framework custom css ( Bootstrap )
+
+// global css ( template fonts, theme color, helper classes etc.)
+@import "global/fonts";
+@import "global/themes";
+@import "global/mixins";
+@import "global/general";
+@import "global/helpers";
+
+// pages css
+@import "pages/index";

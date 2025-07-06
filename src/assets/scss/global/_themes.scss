@@ -1,0 +1,56 @@
+:root {
+	--body-color: #ffffff;
+	--reverse-color: #17161a;
+	--reverse-color-white: 255, 255, 255;
+	--reverse-color-black: 0, 0, 0;
+
+	--bs-border-color: #e4e9ed;
+
+	--svg-stroke-1: 1;
+	--svg-stroke-2: 2;
+	--svg-stroke-3: 3;
+
+	--light-bg1: #efefef;
+	--light-bg2: #E3E3EB;
+	--light-bg3: #E2F2E8;
+	--light-bg4: #E7EAEE;
+	--light-bg5: #F7F2ED;
+	--light-bg6: #E3F1F5;
+
+	--g1-color: #f5f5f5;
+	--g2-color: #cbcdc6;
+
+
+	// --primary-color: #D97BCC;
+	// --accent-color: #B0BD8F;
+
+	// --theme-color1: #E98ADC;
+	// --theme-color2: #a962b3;
+}
+
+[data-bs-theme="dark"] {
+	--reverse-color-white: 0, 0, 0;
+	--reverse-color-black: 255, 255, 255;
+
+	--body-color: #17161a;
+	--bs-body-bg: #1b1a1e;
+	--reverse-color: #f9f9f9;
+	--bs-border-color: #232326;
+
+	--g1-color: #1c1c1c;
+	--g2-color: #000000;
+}
+
+[data-theme="theme-Real-estate"] {
+	--primary-color: #1E3A5F;
+	--accent-color: #F59E0B;
+
+	--theme-color1: #b9ab93;
+	--theme-color2: #93b0b9;
+	--theme-color3: #b7b993;
+	--theme-color4: #cfcded;
+	--theme-color5: #DED3C4;
+	--theme-color6: #F5F0CD;
+	--theme-color7: #EBD6FB;
+	--theme-color8: #D3ECCD;
+}
