@@ -26,9 +26,14 @@ module.exports = function(grunt) {
         }
     });
 
+    // Load necessary grunt plugins
     grunt.loadNpmTasks("grunt-sass");
-    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks("grunt-contrib-uglify");
 
+    // Individual tasks
     grunt.registerTask("buildcss", ["sass"]);
     grunt.registerTask("buildjs", ["uglify"]);
+
+    // Combined build task for Netlify
+    grunt.registerTask("build", ["buildcss", "buildjs"]);
 };
