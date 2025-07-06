@@ -1,8 +1,8 @@
 module.exports = function(grunt) {
-    const sass = require('sass'); // using dart-sass
+    const sass = require('sass'); // Dart Sass
 
     grunt.initConfig({
-        // SCSS to minified CSS
+        // Compile SCSS to minified CSS
         sass: {
             dist: {
                 options: {
@@ -16,7 +16,7 @@ module.exports = function(grunt) {
             }
         },
 
-        // JS minification
+        // Minify and bundle JS
         uglify: {
             my_target: {
                 files: {
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
             }
         },
 
-        // Copy necessary files to dist/
+        // Copy output files to dist folder for deployment
         copy: {
             main: {
                 expand: true,
@@ -47,11 +47,12 @@ module.exports = function(grunt) {
         }
     });
 
-    // Load required grunt plugins
+    // Load grunt plugins
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-copy');
 
-    // Default task
+    // Default and build tasks (for Netlify)
     grunt.registerTask('default', ['sass', 'uglify', 'copy']);
+    grunt.registerTask('build', ['sass', 'uglify', 'copy']); // <-- for Netlify
 };
