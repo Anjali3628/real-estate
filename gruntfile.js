@@ -28,19 +28,20 @@ module.exports = function(grunt) {
             }
         },
 
-        // Copy output files to dist folder for deployment
+        // Copy all necessary files to dist for deployment
         copy: {
             main: {
                 expand: true,
-                cwd: 'real-estate/',
+                cwd: './',
                 src: [
-                    'index.html',
-                    'contact.html',
-                    'service.html',
-                    'src/assets/css/style.min.css',
-                    'src/assets/bundles/libscripts.bundle.js',
+                    '*.html',
+                    'favicon.ico',
+                    'src/assets/css/**',
+                    'src/assets/js/**',
+                    'src/assets/bundles/**',
                     'src/assets/images/**',
-                    'src/assets/fonts/**'
+                    'src/assets/fonts/**',
+                    'src/assets/vendor/**'
                 ],
                 dest: 'dist/'
             }
@@ -54,5 +55,5 @@ module.exports = function(grunt) {
 
     // Default and build tasks (for Netlify)
     grunt.registerTask('default', ['sass', 'uglify', 'copy']);
-    grunt.registerTask('build', ['sass', 'uglify', 'copy']); // <-- for Netlify
+    grunt.registerTask('build', ['sass', 'uglify', 'copy']);
 };
